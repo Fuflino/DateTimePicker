@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FriendsList.Views.FriendDetailsView">
+    <StackLayout x:Name="mainLayout" Orientation="Vertical">
+    <StackLayout x:Name="topLayout" Orientation="Horizontal">
+        <StackLayout x:Name="imageLayout"></StackLayout>
+        <StackLayout x:Name="switchLayout" Orientation="Vertical" HorizontalOptions="EndAndExpand"></StackLayout>
+    </StackLayout>
+    <TableView x:Name="tblView" Intent="Data">
+        <TableRoot>
+            <TableSection x:Name="tblSection1" Title="Friend Details">
+                <EntryCell x:Name="nameEntry" LabelColor="Aqua"></EntryCell>    
+                <EntryCell x:Name="addressEntry"></EntryCell>
+                <EntryCell x:Name="phoneEntry"></EntryCell>
+                <EntryCell x:Name="emailEntry"></EntryCell>
+                    <EntryCell x:Name="homePageEntry"></EntryCell>
+                </TableSection>
+            
+        </TableRoot>
+</TableView>
+        <StackLayout x:Name="bottomLayout" Orientation="Vertical">
+            <Button x:Name="callBtn" Text="Call"></Button>
+            <Button x:Name="SMSBtn" Text="Send SMS"></Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

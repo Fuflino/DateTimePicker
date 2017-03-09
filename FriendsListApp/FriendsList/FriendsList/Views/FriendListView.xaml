@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FriendsList.FriendListView">
+  <StackLayout x:Name="TopLayout" Orientation="Vertical" BackgroundColor="Maroon"></StackLayout>
+  <Label x:Name="Title" Text="Friend List" HorizontalOptions="Center" FontSize="24" FontFamily="fantasy"></Label>
+  <Button x:Name="AddBtn" Text="Add friend" FontFamily="fantasy" HorizontalOptions="Center" Clicked="AddFriendBtn_OnClicked"></Button>
+</ContentPage>
